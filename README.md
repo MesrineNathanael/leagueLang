@@ -1,4 +1,4 @@
-# leagueLang
+# leagueLang ✈️
 League of Legends Language changer made in C# WPF.
 The purpose is to change the client and game language on any server (NA, EUW, OCE...)
 
