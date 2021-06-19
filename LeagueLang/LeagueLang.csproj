@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>LeagueLang.App</StartupObject>
+    <ApplicationIcon>giphy.ico</ApplicationIcon>
+    <Authors>presios16 - Nouilleuh</Authors>
+    <Company>LeagueLang</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="assets\**" />
+    <EmbeddedResource Remove="assets\**" />
+    <None Remove="assets\**" />
+    <Page Remove="assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="0d9f1439e90c6a1ee61cdcb97e1aa288.jpg" />
+    <None Remove="541428.jpg" />
+    <None Remove="allemagne.png" />
+    <None Remove="aze.jpg" />
+    <None Remove="chine.png" />
+    <None Remove="coree-du-sud.png" />
+    <None Remove="english.png" />
+    <None Remove="espagne.png" />
+    <None Remove="ExicaMuVcAE7h6b.jpg" />
+    <None Remove="france.png" />
+    <None Remove="giphy.gif" />
+    <None Remove="italie.png" />
+    <None Remove="japon.png" />
+    <None Remove="russie.png" />
+    <None Remove="tenor.gif" />
+    <None Remove="vietnam.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f935dc20-1cf0-11d0-adb9-00c04fd58a0b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="0d9f1439e90c6a1ee61cdcb97e1aa288.jpg" />
+    <Resource Include="541428.jpg" />
+    <Resource Include="allemagne.png" />
+    <Resource Include="aze.jpg" />
+    <Resource Include="chine.png" />
+    <Resource Include="coree-du-sud.png" />
+    <Resource Include="english.png" />
+    <Resource Include="espagne.png" />
+    <Resource Include="ExicaMuVcAE7h6b.jpg" />
+    <Resource Include="france.png" />
+    <Resource Include="giphy.gif" />
+    <Resource Include="italie.png" />
+    <Resource Include="japon.png" />
+    <Resource Include="russie.png" />
+    <Resource Include="tenor.gif" />
+    <Resource Include="vietnam.png" />
+  </ItemGroup>
+
+</Project>

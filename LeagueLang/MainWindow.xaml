@@ -1,0 +1,128 @@
+﻿<Window x:Class="LeagueLang.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeagueLang"
+        mc:Ignorable="d"
+        Title="League of Legends language changer" Height="439" Width="753" ResizeMode="NoResize" Icon="/giphy.gif">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <!---<MediaElement Source="assets\video.mp4" HorizontalAlignment="Left" Height="424" VerticalAlignment="Top" Width="769"/>-->
+        <TextBlock x:Name="label1" HorizontalAlignment="Center" Text="League path" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,379,0,0" TextAlignment="Center" Width="354">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF91DFF5"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="/ExicaMuVcAE7h6b.jpg"/>
+            </Grid.Background>
+            <TextBlock HorizontalAlignment="Left" Margin="62,69,0,0" Text="English" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Left" Margin="43,144,0,0" Text="中文 | Chinese" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button Name="buttonEnglish" Click="English_Click" Content="" HorizontalAlignment="Left" Margin="34,15,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/english.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="buttonChinese" Click="Chinese_Click" Content="" HorizontalAlignment="Left" Margin="34,90,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/chine.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="34,220,0,0" Text="日本語 | Japanese" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonJapanese" Click="Japanese_Click" Content="" HorizontalAlignment="Left" Margin="34,166,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/japon.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="45,296,0,0" Text="한글 | Korean" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonKorean" Click="Korean_Click" Content="" HorizontalAlignment="Left" Margin="34,242,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/coree-du-sud.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="18,371,0,0" Text="Tiếng Việt | Vietnamese" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonVietnamese" Click="Vietnamese_Click" Content="" HorizontalAlignment="Left" Margin="34,317,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/vietnam.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="642,69,0,0" Text="French" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <TextBlock HorizontalAlignment="Left" Margin="644,144,0,0" Text="Italian" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonFrench" Click="French_Click" Content="" HorizontalAlignment="Left" Margin="613,15,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/france.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="buttonItalian" Click="Italian_Click" Content="" HorizontalAlignment="Left" Margin="613,90,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/italie.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="640,220,0,0" Text="Russian" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonRussian" Click="Russian_Click" Content="" HorizontalAlignment="Left" Margin="613,166,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/russie.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="639,296,0,0" Text="German" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonGerman" Click="German_Click" Content="" HorizontalAlignment="Left" Margin="613,242,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/allemagne.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" Margin="640,371,0,0" Text="Spanish" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.521,0.525" Foreground="White"/>
+            <Button x:Name="buttonSpanish" Click="Spanish_Click" Content="" HorizontalAlignment="Left" Margin="613,317,0,0" VerticalAlignment="Top" Height="54" Width="94" BorderBrush="White" Foreground="White" BorderThickness="0,0,0,0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush ImageSource="/espagne.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <CheckBox x:Name="chkInk" Content="Create desktop icon" HorizontalAlignment="Left" Margin="225,281,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" IsChecked="True">
+                <CheckBox.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF80D3F9"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </CheckBox.Foreground>
+                <CheckBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF639BFD"/>
+                        <GradientStop Color="#FF89EFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox x:Name="chkLaunch" Content="Launch League auto." HorizontalAlignment="Left" Margin="394,281,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}">
+                <CheckBox.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF80D3F9"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </CheckBox.Foreground>
+                <CheckBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF639BFD"/>
+                        <GradientStop Color="#FF89EFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </CheckBox.Background>
+            </CheckBox>
+
+        </Grid>
+        <TextBlock x:Name="label1_Copy" HorizontalAlignment="Center" Text="Waiting for user input... Click on a flag to select a language. Please close your League client before." TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,308,0,0" Height="66" Width="328" TextAlignment="Center" FontSize="14">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEBEDF3" Offset="0.017"/>
+                    <GradientStop Color="#FF44B6EC" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+    </Grid>
+
+</Window>
